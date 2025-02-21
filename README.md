@@ -1,4 +1,3 @@
-
 # API de Clima 🌤️
 
 Projeto de estudo de uma API simples para retornar ao usuário dados climáticos devidamente tratados de uma cidade utilizando a API da OpenWeather.
@@ -13,9 +12,8 @@ Projeto de estudo de uma API simples para retornar ao usuário dados climáticos
 
 - Dotenv
 
-
-
 ## 📌 Funcionalidades:
+
 - Buscar informações climáticas de uma cidade informada pelo usuário.
 - Retornar temperatura e descrição do clima atual.
 - Suporte para temperatura em Celsius e idioma em português.
@@ -42,6 +40,7 @@ npm install
 OPENWEATHER_API_KEY= SUA_CHAVE_API_AQUI
 PORT=3000
 ```
+
 🔑 Obs: Para obter uma chave de API, cadastre-se no OpenWeather: https://home.openweathermap.org/
 
 ## ▶️ Como Executar o Projeto
@@ -51,21 +50,24 @@ Para rodar o servidor, use o seguinte comando:
 ```
 npm run dev
 ```
+
 Ou, caso queira rodar sem nodemon:
 
 ```
 node src/app.js
 ```
+
 O servidor será iniciado na porta definida no .env, ou na porta 3000 por padrão.
+
 # 🌎 Endpoints da API
 
 🔹 Obter dados do clima por cidade
 
-- Rota: ```METODO GET: /api/weather/:city ```
+- Rota: `METODO GET: /api/weather/:city `
 
 📥 Parâmetros:
 
-- ```city ``` (string) → Nome da cidade a ser buscada.
+- `city ` (string) → Nome da cidade a ser buscada.
 
 📤 Exemplo de Requisição:
 
@@ -85,9 +87,15 @@ GET http://localhost:3000/api/weather/São Paulo
     "descricao": "algumas nuvens"
 }
 ```
+
+# Deploy
+
+https://api-clima-q6kl.onrender.com/api/weather/rio%20de%20janeiro
+
 ## 📄 Licença
 
 - Este projeto está licenciado sob a MIT License. Sinta-se à vontade para utilizá-lo e modificá-lo! 😊
+
 ## 👨‍💻 Autor
 
 Desenvolvido por [Victor Terra](https://victorterradev.com/) 🚀.
