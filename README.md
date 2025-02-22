@@ -18,6 +18,26 @@ Projeto de estudo de uma API simples para retornar ao usuário dados climáticos
 - Retornar temperatura e descrição do clima atual.
 - Suporte para temperatura em Celsius e idioma em português.
 
+# 📁 Estrutura de pastas
+
+```
+api-de-clima/
+│
+├── src/
+│   ├── app.js          # Configuração principal do servidor
+│   ├── routes/
+│   │   └── weather.js  # Rotas da API de clima
+│   ├── services/
+│   │   └── weatherService.js # Lógica para consumir a API externa
+│   └── config/
+│       └── dotenv.js   # Configuração de variáveis de ambiente
+│
+├── .env                # Chave da API e outras configurações
+├── package.json
+└── README.md
+
+```
+
 # ⚙️ Configuração e Instalação
 
 1️⃣ Clone o Repositório e entre no diretório do projeto.
