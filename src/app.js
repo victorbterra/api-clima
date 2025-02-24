@@ -10,14 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // HABILITAR CORS
-app.use(cors({
-  origin: "*", // permitir todos os domínios
-  credentials: true, // permitir que os cookies sejam transmitidos
-  methods: ["GET"], // permitir apenas GET
-  allowedHeaders: ["Content-Type", "Authorization"], // permitir os cabeçalhos Content-Type e Authorization
- 
-}));
-
+app.use(cors());
 
 // CONVERSÃO PARA JSON
 app.use(express.json());
