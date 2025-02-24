@@ -1,6 +1,6 @@
 // CONFIGURAÇÕES DAS ROTAS PARA OBTER O CLIMA
 import express from 'express';
-import { getWeather } from '../services/weatherService.js';
+import { getWeather, getForecast } from '../services/weatherService.js';
 
 const router = express.Router();
 
@@ -10,7 +10,11 @@ router.get('/:city', async (req, res) => {
     const {city} = req.params;
     try {
         const weatherData = await getWeather(city);
-        res.status(200).json(weatherData);
+        const forecastData = await getForecast(city);
+        res.status(200).json({
+            weatherData,
+            forecastData,
+        });
     }
     catch (error) {
         console.error(error);
